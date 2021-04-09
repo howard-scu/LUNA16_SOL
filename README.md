@@ -1,7 +1,19 @@
 # LUNA16 SOLUTION
+## generate patches
+- size:164,164,64
+- spacing:0.65,0.65,1.0
 
-## 分割
-- 生成肺结节数据集,Size=(128,128,64),Spacing=(0.65,0.65,1.0)
-    + 肺结节中心
+
+
+## segmentation
+### augmentation
+- random affine:(PI/15,PI/15,PI/15)
+- random flip
+- random crop: 128,128,48
+- random gaussian smooth
+- random gaussian noise
+
+### model
+
 
 ## classification
